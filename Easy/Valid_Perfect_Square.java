@@ -1,5 +1,7 @@
 //367. Valid Perfect Square
 //https://leetcode.com/problems/valid-perfect-square/description/
+
+//My-Submission - https://leetcode.com/problems/valid-perfect-square/solutions/3348310/java-binary-search-solution/
 class Solution {
     public boolean isPerfectSquare(int num) {
         if(num==1){
