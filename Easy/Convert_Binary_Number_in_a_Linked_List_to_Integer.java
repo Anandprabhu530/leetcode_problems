@@ -12,3 +12,6 @@ class Solution {
         return out;
     }
 }
+
+
+// My Submission:https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/solutions/3352600/easy-to-understand-java-solution/
