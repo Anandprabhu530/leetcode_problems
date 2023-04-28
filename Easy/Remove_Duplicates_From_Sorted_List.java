@@ -2,7 +2,7 @@
 
 //https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 
-//My-Submission: https://leetcode.com/problems/remove-duplicates-from-sorted-list/solutions/3360424/easy-to-understand-java-solution/
+//My-Submission: https://leetcode.com/problems/remove-duplicates-from-sorted-list/solutions/3463515/easy-to-understand-java-solution/
 
 /**
  * Definition for singly-linked list.
@@ -16,16 +16,17 @@
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        ListNode temp = head;
-        if(head==null){
+        if(head==null || head.next==null){
             return head;
         }
-        while(head.next!=null){
-            if(head.val==head.next.val){
-                head.next = head.next.next;
-            }else
-            head = head.next;
+        ListNode node = head;
+        while(node.next!=null){
+            if(node.val==node.next.val){
+                node.next = node.next.next;
+            }else{
+                node = node.next;
+            }
         }
-        return temp;
+        return head;
     }
 }
